@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onverse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+</head>
+<body class="bg-dark">
+    <canvas class="fixed-top" id="spaceCanvas"></canvas>
+    
+    <div 
+        class="vh-100 d-flex justify-content-center align-items-md-start align-items-center text-md-start text-center gap-2 mx-5 flex-column"
+        >
+
+        <h1 class="display-1">404</h1>
+        <p><code>{{ request.path }}</code> is not something we know about.</p>
+    
+    </div>
+    
+    
+    
+    <script src="{{ url_for('static', filename='js/space.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <style>
+        #heading {
+            background: -webkit-linear-gradient(var(--bs-primary), var(--bs-primary-sec));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vh-100 d-flex justify-content-center align-items-center flex-column">
+        <canvas class="position-absolute" id="spaceCanvas"></canvas>
+        <h1 class="display-1" id="heading">Onverse</h1>
+        <p>Our mission: Free, open, uncensored AI chat for all.</p>
+        <a class="btn btn-primary">Try now</a>
+    </div>
+
+
+    <script src="{{ url_for('static', filename='js/space.js') }}"></script>
+
+</body>
+
+</html>
